@@ -16,6 +16,9 @@ class SecondPage extends StatelessWidget {
             Text(
               'This is the second page',
             ),
+            Text(
+              'Alan Daniel Hernandez Ruiz- 10B',
+            ),
             SizedBox(height: 20), // Add some space between text and button
             ElevatedButton(
               onPressed: () {
