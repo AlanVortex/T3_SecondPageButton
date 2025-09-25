@@ -10,8 +10,20 @@ class SecondPage extends StatelessWidget {
         title: Text("Second Page"),
       ),
       body: Center(
-        child: Text(
-          'This is the second page',
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              'This is the second page',
+            ),
+            SizedBox(height: 20), // Add some space between text and button
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              child: Text('Return to Main Page'),
+            ),
+          ],
         ),
       ),
     );
